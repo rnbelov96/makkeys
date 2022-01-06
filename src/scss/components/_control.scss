@@ -1,0 +1,127 @@
+.control {
+  @include bg;
+  background-image: url('/src/img/bgs/control-bg.jpg');
+  background-position-y: top;
+  padding-top: 120px;
+  padding-bottom: 110px;
+
+  @media (max-width: 991px) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: 650px) {
+    top: -30px;
+    position: relative;
+    padding-top: 110px;
+    margin-bottom: -30px;
+    padding-bottom: 80px;
+  }
+}
+
+.control__content {
+  @include max-width(635px);
+  margin-left: auto;
+  position: relative;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+}
+
+.control__title {
+  @include h2;
+  text-transform: none;
+  margin-bottom: 8px;
+
+  span {
+    color: $yellow;
+  }
+}
+
+.control__text {
+  @include h4;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.control__list {
+  @include reset-list;
+  margin-bottom: 8px;
+}
+
+.control__item {
+  position: relative;
+  padding-left: 32px;
+  @include body;
+  margin-bottom: 6px;
+
+  &::before {
+    width: 16px;
+    height: 16px;
+    background: #faa900;
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 4px;
+  }
+}
+
+.control__img-box {
+  position: absolute;
+  left: -480px;
+  top: 2px;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.control__main-img {
+  filter: drop-shadow(10px 10px 115px rgba(238, 160, 84, 0.25));
+}
+
+.control__small-img {
+  position: absolute;
+  bottom: -202px;
+  left: 160px;
+  filter: drop-shadow(10px 10px 81px rgba(105, 177, 0, 0.25));
+}
+
+.control__circles-box {
+  z-index: -1;
+  position: absolute;
+  left: -137px;
+  top: 0px;
+}
+
+.control__large-circle {
+  width: 582px;
+  height: 582px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='700' ry='700' stroke='%2369B100FF' stroke-width='3' stroke-dasharray='10%2c 15' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 700px;
+}
+
+.control__small-circle {
+  position: absolute;
+  @include central-align;
+  width: 517px;
+  height: 517px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='700' ry='700' stroke='%23FAA900FF' stroke-width='3' stroke-dasharray='10%2c 15' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 700px;
+}
+
+.control__circle-bg {
+  position: absolute;
+  @include central-align;
+  width: 517px;
+  height: 517px;
+  border-radius: 700px;
+  background: #69b100;
+  opacity: 0.4;
+  filter: blur(309px);
+  z-index: -2;
+}

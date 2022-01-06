@@ -1,0 +1,66 @@
+.assort {
+  padding-bottom: 91px;
+  padding-top: 20px;
+  @include bg;
+  background-image: url('/src/img/bgs/assort-bg.png');
+  color: white;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: 650px) {
+    top: -28px;
+    margin-bottom: -28px;
+    padding-bottom: 80px;
+    padding-top: 0;
+  }
+}
+
+.assort__title {
+  @include h2;
+  font-size: 42px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  @include x-align;
+  margin-bottom: 9px;
+
+  span.underline::after {
+    background-color: $yellow;
+
+    @media (max-width: 650px) {
+      content: none;
+    }
+  }
+}
+
+.assort__text {
+  @include h4;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  @include x-align;
+
+  &::before {
+    position: absolute;
+    content: url('/src/img/icons/arrow.svg');
+    bottom: -119px;
+    left: 0px;
+
+    @media (max-width: 720px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: url('/src/img/icons/arrow.svg');
+    bottom: -119px;
+    right: 0px;
+    transform: rotateY(180deg);
+
+    @media (max-width: 720px) {
+      content: none;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.owner {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 1020px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+.owner__content {
+  @include max-width(635px);
+  margin-left: auto;
+  position: relative;
+
+  @media (max-width: 1020px) {
+    margin-right: auto;
+  }
+
+  &::before {
+    content: url('/src/img/owner-img.jpg');
+    position: absolute;
+    z-index: -1;
+    left: -883px;
+    top: -273px;
+
+    @media (max-width: 1020px) {
+      content: none;
+    }
+  }
+}
+
+.owner__title {
+  @include h2;
+  margin-bottom: 7px;
+  @include max-width(563px);
+  text-transform: none;
+
+  span {
+    color: $yellow;
+  }
+}
+
+.owner__text-box {
+  margin-bottom: 13px;
+}
+
+.owner__text {
+  @include body;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.owner__note {
+  min-height: 163px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23FAA900FF' stroke-width='3' stroke-dasharray='15%2c 18 ' stroke-dashoffset='18' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include h4;
+  margin-bottom: 16px;
+  text-align: center;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &::before {
+    position: absolute;
+    content: url('/src/img/owner-name.png');
+    right: 32px;
+    bottom: -69px;
+
+    @media (max-width: 1020px) {
+      content: none;
+    }
+  }
+}
+
+.owner__photo {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+
+  @media (max-width: 1020px) {
+    display: block;
+  }
+
+  @media (max-width: 650px) {
+    width: 300px;
+  }
+}
+
+.owner__name {
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotateZ(15deg);
+  position: relative;
+  top: -33px;
+  margin-bottom: -60px;
+  display: none;
+
+  @media (max-width: 1020px) {
+    display: block;
+  }
+
+  @media (max-width: 650px) {
+    width: 300px;
+  }
+}
+
+.owner__caption {
+  @include body;
+  margin-bottom: 0;
+  text-align: right;
+
+  @media (max-width: 1020px) {
+    text-align: center;
+  }
+
+  span {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+}

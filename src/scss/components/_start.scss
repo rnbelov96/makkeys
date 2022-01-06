@@ -1,0 +1,156 @@
+.start {
+  padding-top: 63px;
+  padding-bottom: 63px;
+
+  @media (max-width: 1150px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 0px;
+  }
+}
+
+.start__title {
+  margin-bottom: 7px;
+  text-align: center;
+  @include h2;
+
+  span {
+    color: $yellow;
+  }
+}
+
+.start__text {
+  @include h4;
+  @include max-width(819px);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 97px;
+
+  @media (max-width: 650px) {
+    margin-bottom: 50px;
+  }
+}
+
+.start__list {
+  display: flex;
+  @include reset-list;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+
+  @media (max-width: 650px) {
+    margin-bottom: 20px;
+    gap: 40px;
+  }
+}
+
+.start__item {
+  @include max-width(239px);
+  position: relative;
+
+  @media (max-width: 650px) {
+    max-width: 100%;
+  }
+
+  &::before {
+    content: '';
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(231, 239, 239, 0.5);
+    position: absolute;
+    left: -50px;
+    top: -72px;
+    z-index: -1;
+
+    @media (max-width: 890px) {
+      width: 160px;
+      height: 160px;
+      left: -40px;
+      top: -40px;
+    }
+
+    @media (max-width: 650px) {
+      width: 120px;
+      height: 120px;
+      left: -25px;
+      top: -25px;
+    }
+  }
+}
+
+.start__item-number {
+  font-weight: 900;
+  font-family: 'Noto Sans';
+  font-size: 40px;
+  margin-bottom: 0;
+  color: $yellow;
+
+  @media (max-width: 1150px) {
+    font-size: 35px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 22px !important;
+  }
+}
+
+.start__item-number-caption {
+  font-weight: 900;
+  font-family: 'Noto Sans';
+  font-size: 26px;
+  margin-bottom: 7px;
+  color: $yellow;
+
+  @media (max-width: 991px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 18px !important;
+  }
+}
+
+.start__item-text {
+  @include body;
+  margin-bottom: 0;
+}
+
+.start__note {
+  text-align: right;
+  font-size: 12px;
+  color: $black;
+  opacity: 0.7;
+  margin-bottom: 0;
+
+  @media (max-width: 650px) {
+    font-size: 12px !important;
+  }
+}

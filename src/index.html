@@ -18,32 +18,1174 @@
   </head>
   <body>
     <main>
-      <section class="slider">
-        <div class="slider__wrapper">
-          <div class="slider__img-box">
-            <div class="slider__img-item"></div>
-            <div class="slider__img-item"></div>
-            <div class="slider__img-item"></div>
-            <div class="slider__img-item"></div>
+      <section class="top">
+        <section class="desc">
+          <div class="container">
+            <header class="header">
+              <div class="header__content">
+                <img
+                  src="./img/icons/logo-black.svg"
+                  alt="Логотип компании"
+                  class="header__logo"
+                />
+                <p class="header__text">
+                  Продаём технику, аксессуары и товары для дома
+                </p>
+                <div class="header__contact-box">
+                  <a href="tel:+" class="header__phone">+7 (922) 750 08 99</a
+                  ><button class="header__callback js-callback">
+                    Заказать звонок
+                  </button>
+                </div>
+              </div>
+            </header>
+            <h1 class="desc__title">
+              <span>Откройте за 6 недель бизнес</span> по продаже техники,
+            </h1>
+            <h2 class="desc__subtitle">
+              аксессуаров для гаджетов и товаров для дома
+              <span class="underline"
+                >при поддержке основателя с 10-летним опытом</span
+              >
+            </h2>
+            <p class="desc__text">
+              Команда «МАККЕЙС» готова поделиться своими рабочими инстументами и
+              деловыми контактами
+            </p>
+            <ul class="desc__list">
+              <li class="desc__item">
+                Товары от производителей Китая, за которые вам скажут спасибо, и
+                вы сможете достойно зарабатывать
+              </li>
+              <li class="desc__item">
+                Проверенные технологии маркетинга и продаж
+              </li>
+              <li class="desc__item">
+                Регулярная актуализация товарной матрицы
+              </li>
+            </ul>
+
+            <button class="button button_desc js-present">
+              ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ
+            </button>
+
+            <form class="line-form line-form_desc">
+              <h3 class="line-form__title">
+                Узнайте о бизнесе в подробной презентации
+              </h3>
+              <div class="line-form__content">
+                <div class="line-form__input-container">
+                  <div class="line-form__input-box">
+                    <input
+                      type="tel"
+                      placeholder="+7 (___) ___ ____"
+                      name="phone"
+                      data-type="phone"
+                      class="line-form__input"
+                    />
+                  </div>
+                  <div class="line-form__input-box">
+                    <input
+                      type="email"
+                      placeholder="bestpartner@mail.ru"
+                      name="email"
+                      data-type="email"
+                      class="line-form__input"
+                    />
+                  </div>
+                  <div class="line-form__input-box">
+                    <input
+                      type="text"
+                      placeholder="Юрий Девяткин"
+                      name="name"
+                      data-type="name"
+                      class="line-form__input"
+                    />
+                  </div>
+                </div>
+                <button type="submit" class="button button_line-form">
+                  ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ
+                </button>
+              </div>
+              <p class="line-form__text">
+                Я подтверждаю, что ознакомлен, и даю согласие на обработку
+                персональных данных на условиях и для целей, определяемых
+                <button type="button" class="js-policy">
+                  Политикой конфиденциальности.
+                </button>
+              </p>
+            </form>
+          </div>
+        </section>
+
+        <section class="models">
+          <div class="container">
+            <h2 class="models__title">
+              2 проверенные <span>бизнес-модели</span>
+            </h2>
+            <p class="models__text">
+              14 000 постоянных клиентов сказали мерси, отоварившись в таких
+              форматах наших магазинов, как:
+            </p>
+            <div class="models__slider-list">
+              <div class="models__slider-box">
+                <p class="models__slider-title">
+                  «Остров» в торговом центре до 10&nbsp;кв.м.
+                </p>
+                <section class="slider-island">
+                  <div class="slider-island__wrapper">
+                    <div class="slider-island__img-box">
+                      <div class="slider-island__img-item">
+                        <img
+                          src="./img/gallery/slider-left/1.png"
+                          alt="Фото островка"
+                        />
+                      </div>
+                      <div class="slider-island__img-item">
+                        <img
+                          src="./img/gallery/slider-left/2.png"
+                          alt="Фото островка"
+                        />
+                      </div>
+                      <div class="slider-island__img-item">
+                        <img
+                          src="./img/gallery/slider-left/3.png"
+                          alt="Фото островка"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-island__nav-box"></div>
+                </section>
+                <div class="models__slider-caption-box">
+                  <p class="models__slider-income-caption">Чистая прибыль</p>
+                  <p
+                    class="models__slider-income-numbers models__slider-income-numbers_green"
+                  >
+                    от <span>350 тыс. руб.</span> в месяц
+                  </p>
+                </div>
+              </div>
+              <div class="models__slider-box">
+                <p class="models__slider-title models__slider-title_yellow">
+                  Флагманский магазин от 25&nbsp;кв.м.
+                </p>
+                <section class="slider-shop">
+                  <div class="slider-shop__wrapper">
+                    <div class="slider-shop__img-box">
+                      <div class="slider-shop__img-item">
+                        <img
+                          src="./img/gallery/slider-right/1.png"
+                          alt="Фото магазина"
+                        />
+                      </div>
+                      <div class="slider-shop__img-item">
+                        <img
+                          src="./img/gallery/slider-right/2.png"
+                          alt="Фото магазина"
+                        />
+                      </div>
+                      <div class="slider-shop__img-item">
+                        <img
+                          src="./img/gallery/slider-right/3.png"
+                          alt="Фото магазина"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-shop__nav-box"></div>
+                </section>
+                <div class="models__slider-caption-box">
+                  <p class="models__slider-income-caption">Чистая прибыль</p>
+                  <p
+                    class="models__slider-income-numbers models__slider-income-numbers_yellow"
+                  >
+                    от <span>200 тыс. руб.</span> в месяц
+                  </p>
+                </div>
+              </div>
+            </div>
+            <ul class="models__list">
+              <li class="models__item">
+                <p class="models__item-text">
+                  Проверенная годами бизнес-модель по продаже электроники,
+                  аксессуаров и товаров для жизни;
+                </p>
+              </li>
+              <li class="models__item">
+                <p class="models__item-text">
+                  Строим со своими клиентами долгосрочные отношения, поэтому
+                  предлагаем только такую продукцию, в которой уверены на 100%;
+                </p>
+              </li>
+              <li class="models__item">
+                <p class="models__item-text">
+                  Выстроенные отношения с проверенными производителями и
+                  поставщиками из Китая;
+                </p>
+              </li>
+              <li class="models__item">
+                <p class="models__item-text">
+                  Более 15 000 наименований продукции и системное обновление
+                  ассортимента;
+                </p>
+              </li>
+              <li class="models__item">
+                <p class="models__item-text">
+                  Высокая лояльность покупателей и стабильный поток продаж
+                </p>
+                <ul class="models__item-list">
+                  <li class="models__item-item">
+                    Система повторного привлечения клиентов: бонусы,
+                    моментальная лоторея и др.
+                  </li>
+                  <li class="models__item-item">
+                    Клиентоориентированность команды — часть корпоративной
+                    культуры
+                  </li>
+                  <li class="models__item-item">
+                    Современное, стильное оформление каждой точки продаж
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section class="start">
+        <div class="container">
+          <h2 class="start__title">
+            <span>Лёгкий старт</span> в актуальной нише
+          </h2>
+          <p class="start__text">
+            С каждым годом на российский рынок выходят новые модели устройств,
+            только за первые 3 квартала 2021 года было продано более 21 млн
+            устройств, каждому из которых нужны аксессуары.
+          </p>
+          <ul class="start__list">
+            <li class="start__item">
+              <p class="start__item-number">> 20,3</p>
+              <p class="start__item-number-caption">млн шт.</p>
+              <p class="start__item-text">
+                Было продано смартфонов за первую половину 2021 года. К каждому
+                из которых потребители по несколько раз в год покупают
+                аксессуары*
+              </p>
+            </li>
+            <li class="start__item">
+              <p class="start__item-number">> 450 000</p>
+              <p class="start__item-number-caption">раз в месяц</p>
+              <p class="start__item-text">
+                Покупатели ищут аксессуары для своих гаджетов*
+              </p>
+            </li>
+            <li class="start__item">
+              <p class="start__item-number">Низкий</p>
+              <p class="start__item-number-caption">порог входа</p>
+              <p class="start__item-text">
+                Общие инвестиции от 1,3 млн рублей, это гораздо меньше,
+                чем открыть магазин электроники с вложениями от 15 млн рублей
+              </p>
+            </li>
+            <li class="start__item">
+              <p class="start__item-number">Быстрая</p>
+              <p class="start__item-number-caption">прибыль</p>
+              <p class="start__item-text">
+                Вы начнёте зарабатывать с первых дней работы
+              </p>
+            </li>
+          </ul>
+          <p class="start__note">
+            * Согласно данным аналитического центра GS Group
+          </p>
+        </div>
+      </section>
+
+      <section class="questions">
+        <div class="container">
+          <h2 class="questions__title underline">Остались вопросы?</h2>
+          <p class="questions__text">
+            Получите больше информации в нашей подробной презентации
+          </p>
+          <button class="button button_questions js-present">
+            ПОЛУЧИТЬ ИНФОРМАЦИЮ
+          </button>
+        </div>
+      </section>
+
+      <section class="owner">
+        <div class="container">
+          <div class="owner__content">
+            <h2 class="owner__title">
+              Подробнее о «МАККЕЙС» <span>от основателя</span>
+            </h2>
+            <div class="owner__text-box">
+              <p class="owner__text">
+                Мы первые в Челябинске начали заниматься аксессуарами
+                для мобильных телефонов, начинали с оптовых продаж в 2014 г.
+              </p>
+              <p class="owner__text">
+                <b>В апреле 2016 года открыли свою первую торговую точку</b>
+                в виде «острова» в ТЦ.
+              </p>
+              <p class="owner__text">
+                <b
+                  >Сейчас действуют три «острова» в ТЦ и один флагманский
+                  магазин.</b
+                >
+                Каждый день работаем над тем, чтобы сделать наш сервис
+                ещё качественнее, чтобы покупателям было приятно находиться
+                в магазине, хотелось вновь вернуться и рекомендовать друзьям,
+                знакомым.
+              </p>
+              <p class="owner__text">
+                Ищем и продаём эксклюзивные аксессуары,
+                <b>
+                  еженедельно пополняем ассортимент новыми товарными позициями.
+                </b>
+              </p>
+              <p class="owner__text">
+                За годы работы, путём проб и ошибок,
+                <b>
+                  построили 2 прибыльные бизнес-модели и мы готовы
+                  ими поделиться.
+                </b>
+              </p>
+            </div>
+            <p class="owner__note">
+              Присоединяйтесь к команде «МАККЕЙС» и зарабатывайте на нужных
+              для современных людей товарах.
+            </p>
+            <div class="onwer__owner-box">
+              <img
+                src="./img/owner.jpg"
+                alt="Основатель сети"
+                class="owner__photo"
+              />
+              <img src="./img/owner-name.png" class="owner__name" />
+              <p class="owner__caption">
+                Основатель сети <br />
+                <span>«МАККЕЙС»</span>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="slider__btns-box">
-          <button class="slider__btn-prev"></button
-          ><button class="slider__btn-next"></button>
+      </section>
+
+      <section class="goods">
+        <div class="container">
+          <h2 class="goods__title">
+            Продаём более 15 000 <span>востребованных товаров</span>
+          </h2>
+          <ul class="goods__list">
+            <li class="goods__item">
+              <img
+                src="./img/icons/goods/1.png"
+                alt="Фото товара"
+                class="goods__item-img"
+              />
+              <p class="goods__item-text">Чехлы для мобильных устройств</p>
+            </li>
+            <li class="goods__item">
+              <img
+                src="./img/icons/goods/2.png"
+                alt="Фото товара"
+                class="goods__item-img"
+              />
+              <p class="goods__item-text">Защитные стёкла и плёнки</p>
+            </li>
+            <li class="goods__item">
+              <img
+                src="./img/icons/goods/3.png"
+                alt="Фото товара"
+                class="goods__item-img"
+              />
+              <p class="goods__item-text">Зарядные устройства</p>
+            </li>
+            <li class="goods__item">
+              <img
+                src="./img/icons/goods/4.png"
+                alt="Фото товара"
+                class="goods__item-img"
+              />
+              <p class="goods__item-text">Проводные и беспроводные наушники</p>
+            </li>
+            <li class="goods__item">
+              <img
+                src="./img/icons/goods/5.png"
+                alt="Фото товара"
+                class="goods__item-img"
+              />
+              <p class="goods__item-text">Аксессуары для смарт-часов</p>
+            </li>
+            <li class="goods__item">
+              <img
+                src="./img/icons/goods/6.png"
+                alt="Фото товара"
+                class="goods__item-img"
+              />
+              <p class="goods__item-text">Музыкальные колонки</p>
+            </li>
+            <li class="goods__item">
+              <img
+                src="./img/icons/goods/7.png"
+                alt="Фото товара"
+                class="goods__item-img"
+              />
+              <p class="goods__item-text">Рюкзаки и кейсы</p>
+            </li>
+            <li class="goods__item">
+              <img
+                src="./img/icons/goods/8.png"
+                alt="Фото товара"
+                class="goods__item-img"
+              />
+              <p class="goods__item-text">
+                Лампы, веб-камеры и другие полезные аксессуары
+              </p>
+            </li>
+          </ul>
+          <div class="goods__note-box">
+            <p class="goods__note-text">
+              Благодаря прямым поставкам от заводов-изготовителей в Китае,
+              <span>можно делать наценку от 300% до 1 000%,</span> продавая
+              по рыночным ценам
+            </p>
+          </div>
         </div>
-        <div class="slider__nav-box"></div>
+      </section>
+
+      <section class="assort">
+        <div class="container">
+          <h2 class="assort__title">
+            Хотите <span class="underline">узнать подробнее</span> об
+            ассортименте?
+          </h2>
+          <p class="assort__text">
+            Получите больше информации в нашей подробной презентации
+          </p>
+          <button class="button button_assort js-present">
+            ПОЛУЧИТЬ ИНФОРМАЦИЮ
+          </button>
+        </div>
+      </section>
+
+      <section class="formats">
+        <div class="container">
+          <h2 class="formats__title">
+            <span>3 формата сотрудничества —</span> выбирайте удобные для вас
+            условия
+          </h2>
+          <ol class="formats__list">
+            <li class="formats__item">
+              <div class="formats__item-img-box">
+                <div class="formats__item-img-bg"></div>
+                <img
+                  src="./img/gallery/formats/1.png"
+                  class="formats__item-img"
+                />
+              </div>
+              <p class="formats__item-title">
+                Приобретение <span>франшизы</span> «МАККЕЙС»
+              </p>
+              <div class="formats__type-list">
+                <div class="formats__type-box">
+                  <p class="formats__type-name">«Остров»</p>
+                  <p class="formats__type-place">до 10 кв. м</p>
+                  <p class="formats__type-number">350 тыс. руб.</p>
+                </div>
+                <div class="formats__type-box">
+                  <p class="formats__type-name">Флагманский магазин</p>
+                  <p class="formats__type-place">от 25 кв. м</p>
+                  <p class="formats__type-number">400 тыс. руб.</p>
+                </div>
+              </div>
+              <p class="formats__item-list-title">
+                При данном пакете вы получаете:
+              </p>
+              <ul class="formats__item-list">
+                <li class="formats__item-item">
+                  Внутренние регламенты компании, консультации по возникшим
+                  вопросам;
+                </li>
+                <li class="formats__item-item">
+                  Первоначальный подбор площадей по стандартам компании
+                  «МАККЕЙС»;
+                </li>
+                <li class="formats__item-item">
+                  Консультации по юридическому оформлению деятельности;
+                </li>
+                <li class="formats__item-item">
+                  Перечень оборудования и сопутствующих товаров, необходимых для
+                  начала работы;
+                </li>
+                <li class="formats__item-item">
+                  Первичную поставку товарного запаса;
+                </li>
+                <li class="formats__item-item">
+                  Макеты маркетинговых материалов;
+                </li>
+                <li class="formats__item-item">
+                  Обучение для вас и ваших сотрудников.
+                </li>
+              </ul>
+            </li>
+            <li class="formats__item">
+              <div class="formats__item-img-box">
+                <div class="formats__item-img-bg"></div>
+                <img
+                  src="./img/gallery/formats/2.png"
+                  class="formats__item-img"
+                />
+              </div>
+              <p class="formats__item-title">
+                Приобретение <span>готового бизнеcа</span>
+              </p>
+              <div class="formats__type-list">
+                <div class="formats__type-box">
+                  <p class="formats__type-name">«Остров»</p>
+                  <p class="formats__type-place">до 10 кв. м</p>
+                  <p class="formats__type-number">1,5 млн руб.</p>
+                </div>
+                <div class="formats__type-box">
+                  <p class="formats__type-name">Флагманский магазин</p>
+                  <p class="formats__type-place">от 25 кв. м</p>
+                  <p class="formats__type-number">4,2 млн руб.</p>
+                </div>
+              </div>
+              <ul class="formats__item-list">
+                <li class="formats__item-item">
+                  Берём на себя все задачи по открытию вашего торгового
+                  «острова» или магазина.
+                </li>
+                <li class="formats__item-item">
+                  Выводим точку на плановые показатели по чистой прибыли.
+                </li>
+                <li class="formats__item-item">
+                  Продаём вам работающий, прибыльный бизнес.
+                </li>
+              </ul>
+            </li>
+            <li class="formats__item">
+              <div class="formats__item-img-box">
+                <div class="formats__item-img-bg"></div>
+                <img
+                  src="./img/gallery/formats/3.png"
+                  class="formats__item-img"
+                />
+              </div>
+              <p class="formats__item-title">
+                Бизнес-предложение <span>White label</span>
+              </p>
+              <div class="formats__type-list">
+                <div class="formats__type-box">
+                  <p class="formats__type-name">«Остров»</p>
+                  <p class="formats__type-place">до 10 кв. м</p>
+                  <p class="formats__type-number">1 млн руб.</p>
+                </div>
+              </div>
+              <p class="formats__item-list-title">
+                Для предпринимателей, выбирающих свободное развитие за пределами
+                общей сети:
+              </p>
+              <ul class="formats__item-list">
+                <li class="formats__item-item">
+                  Вы запускаете бизнес по проверенным технологиям.
+                </li>
+                <li class="formats__item-item">
+                  Вы не являетесь участником франчайзинговой сети, а работаете
+                  под своим брендом.
+                </li>
+                <li class="formats__item-item">
+                  Обязательное роялти при данном пакете не взимается.
+                </li>
+                <li class="formats__item-item">
+                  В случае необходимости мы можем оказывать сопровождение вашего
+                  бизнеса во время операционной деятельности (оплачивается
+                  отдельно по запросу в формате, схожем с роялти).
+                </li>
+              </ul>
+            </li>
+          </ol>
+          <div class="formats__note">
+            <p class="formats__note-text">
+              В начале пути каждый рубль на счету, поэтому предлагаем
+              <span> сниженные условия по роялти на 6 месяцев </span> с момента
+              заключения договора.
+            </p>
+          </div>
+          <div class="formats__table">
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_head">
+                <img src="./img/icons/medal.svg" class="formats__icon" />
+                <p class="formats__icon-caption">Роялти</p>
+              </div>
+              <div class="formats__cell formats__cell_head">
+                <p class="formats__month">с 1 по 3-й месяц</p>
+                <p class="formats__percent formats__percent_large">0%</p>
+              </div>
+              <div class="formats__cell formats__cell_head">
+                <p class="formats__month">с 4 по 6-й месяц</p>
+                <p class="formats__percent formats__percent_medium">50%</p>
+              </div>
+              <div class="formats__cell formats__cell_head">
+                <p class="formats__month">с 7-го месяца</p>
+                <p class="formats__percent formats__percent_small">100%</p>
+              </div>
+            </div>
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_left">
+                <p class="formats__format-name">По формату «Остров»</p>
+                <p class="formats__format-place">до 10 кв. м.</p>
+                <p class="formats__format-number">20 000 руб.</p>
+              </div>
+              <div class="formats__cell">0 ₽</div>
+              <div class="formats__cell">10 000 ₽</div>
+              <div class="formats__cell">20 000 ₽</div>
+            </div>
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_left">
+                <p class="formats__format-name">
+                  По формату «Флагманский магазин»
+                </p>
+                <p class="formats__format-place">до 10 кв. м.</p>
+                <p class="formats__format-number">20 000 руб.</p>
+              </div>
+              <div class="formats__cell">0 ₽</div>
+              <div class="formats__cell">12 500 ₽</div>
+              <div class="formats__cell">25 000 ₽</div>
+            </div>
+          </div>
+          <div class="formats__table formats__table_small">
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_head">
+                <img src="./img/icons/medal.svg" class="formats__icon" />
+                <p class="formats__icon-caption">Роялти</p>
+              </div>
+              <div class="formats__cell formats__cell_head">
+                <p class="formats__month">с 1 по 3-й месяц</p>
+                <p class="formats__percent formats__percent_large">0%</p>
+              </div>
+            </div>
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_left">
+                <p class="formats__format-name">По формату «Остров»</p>
+                <p class="formats__format-place">до 10 кв. м.</p>
+                <p class="formats__format-number">20 000 руб.</p>
+              </div>
+              <div class="formats__cell">0 ₽</div>
+            </div>
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_left">
+                <p class="formats__format-name">
+                  По формату «Флагманский магазин»
+                </p>
+                <p class="formats__format-place">до 10 кв. м.</p>
+                <p class="formats__format-number">20 000 руб.</p>
+              </div>
+              <div class="formats__cell">0 ₽</div>
+            </div>
+          </div>
+          <div class="formats__table formats__table_small">
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_head">
+                <img src="./img/icons/medal.svg" class="formats__icon" />
+                <p class="formats__icon-caption">Роялти</p>
+              </div>
+              <div class="formats__cell formats__cell_head">
+                <p class="formats__month">с 4 по 6-й месяц</p>
+                <p class="formats__percent formats__percent_medium">50%</p>
+              </div>
+            </div>
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_left">
+                <p class="formats__format-name">По формату «Остров»</p>
+                <p class="formats__format-place">до 10 кв. м.</p>
+                <p class="formats__format-number">20 000 руб.</p>
+              </div>
+              <div class="formats__cell">
+                <div class="formats__cell">12 500 ₽</div>
+              </div>
+            </div>
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_left">
+                <p class="formats__format-name">
+                  По формату «Флагманский магазин»
+                </p>
+                <p class="formats__format-place">до 10 кв. м.</p>
+                <p class="formats__format-number">20 000 руб.</p>
+              </div>
+              <div class="formats__cell">
+                <div class="formats__cell">10 000 ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="formats__table formats__table_small">
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_head">
+                <img src="./img/icons/medal.svg" class="formats__icon" />
+                <p class="formats__icon-caption">Роялти</p>
+              </div>
+              <div class="formats__cell formats__cell_head">
+                <p class="formats__month">с 7-го месяца</p>
+                <p class="formats__percent formats__percent_small">100%</p>
+              </div>
+            </div>
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_left">
+                <p class="formats__format-name">По формату «Остров»</p>
+                <p class="formats__format-place">до 10 кв. м.</p>
+                <p class="formats__format-number">20 000 руб.</p>
+              </div>
+              <div class="formats__cell">
+                <div class="formats__cell">20 000 ₽</div>
+              </div>
+            </div>
+            <div class="formats__row">
+              <div class="formats__cell formats__cell_left">
+                <p class="formats__format-name">
+                  По формату «Флагманский магазин»
+                </p>
+                <p class="formats__format-place">до 10 кв. м.</p>
+                <p class="formats__format-number">20 000 руб.</p>
+              </div>
+              <div class="formats__cell">
+                <div class="formats__cell">25 000 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="invest">
+        <div class="container">
+          <h2 class="invest__title">
+            Выверенные
+            <span>инвестиции для прибыли</span> от 120&nbsp;000 рублей в месяц
+          </h2>
+          <ul class="invest__list">
+            <li class="invest__item">
+              <p class="invest__item-title invest__item-title_green">
+                «Остров» до 10 кв.м.
+              </p>
+              <div class="invest__content">
+                <ul class="invest__item-list">
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">Паушальный взнос</p>
+                    <p class="invest__item-number">350 тыс. руб.</p>
+                  </li>
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">
+                      Инвестиции (без паушального взноса)
+                    </p>
+                    <p class="invest__item-number">от 1 млн. руб.</p>
+                  </li>
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">Роялти</p>
+                    <p class="invest__item-number">20 тыс. руб.</p>
+                  </li>
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">Окупаемость</p>
+                    <p class="invest__item-number">от 15 месяцев</p>
+                  </li>
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">Средняя выручка</p>
+                    <p class="invest__item-number invest__item-number_green">
+                      <b>от 330 тыс.руб.</b>
+                    </p>
+                  </li>
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">Средняя чистая прибыль</p>
+                    <p class="invest__item-number invest__item-number_green">
+                      <b>от 120 тыс.руб</b>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="invest__item">
+              <p class="invest__item-title invest__item-title_yellow">
+                Флагманский магазин от 25 кв.м
+              </p>
+              <div class="invest__content">
+                <ul class="invest__item-list">
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">Паушальный взнос</p>
+                    <p class="invest__item-number">400 тыс. руб.</p>
+                  </li>
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">
+                      Инвестиции (без паушального взноса)
+                    </p>
+                    <p class="invest__item-number">от 2,8 млн. руб.</p>
+                  </li>
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">Роялти</p>
+                    <p class="invest__item-number">25 тыс. руб.</p>
+                  </li>
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">Окупаемость</p>
+                    <p class="invest__item-number">от 25 месяцев</p>
+                  </li>
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">Средняя выручка</p>
+                    <p class="invest__item-number invest__item-number_yellow">
+                      <b>от 450 тыс.руб. </b>
+                    </p>
+                  </li>
+                  <li class="invest__item-item">
+                    <p class="invest__item-name">Средняя чистая прибыль</p>
+                    <p class="invest__item-number invest__item-number_yellow">
+                      <b>от 200 тыс.руб</b>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="fin">
+        <div class="container">
+          <h2 class="fin__title underline">Остались вопросы по финансам?</h2>
+          <p class="fin__text">
+            Получите бесплатную консультацию по экономике проекта
+          </p>
+          <button class="button button_questions js-callback">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+        </div>
+      </section>
+
+      <section class="steps">
+        <div class="container">
+          <h2 class="steps__title">
+            <span>Этапы запуска</span> торгового «острова» в ТЦ
+          </h2>
+          <ol class="steps__list">
+            <li class="steps__item">
+              <p class="steps__text">
+                <b>Подписание договора</b> и оплата франшизы.
+              </p>
+              <p class="steps__days">1-й день</p>
+            </li>
+            <li class="steps__item">
+              <p class="steps__text">
+                <b>Базовое обучение</b> по ведению бизнеса «МАККЕЙС»,
+                ознакомление с документацией и получение внутренних регламентов
+                и других ноухау компании.
+              </p>
+              <p class="steps__days">2–5-й день</p>
+            </li>
+            <li class="steps__item">
+              <p class="steps__text">
+                <b>Анализ вариантов местоположения</b> точки, консультации
+                по вопросам подбора помещения.
+              </p>
+              <p class="steps__days">2–9-й день</p>
+            </li>
+            <li class="steps__item steps__item_middle">
+              <div class="steps__item-container">
+                <p class="steps__text">
+                  <b>Закупаем для вас первоначальную партию товара</b>
+                  для продажи, а также партию аксессуаров и муляжей
+                  для оформления витрин.
+                </p>
+                <p class="steps__days">3–33-й день</p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <p class="steps__text">
+                <b>Изготавливаете «островок»</b> по требованиям ТЦ и нашим
+                рекомендациям.
+              </p>
+              <p class="steps__days">9–30-й день</p>
+            </li>
+            <li class="steps__item">
+              <p class="steps__text">
+                <b>Вы ищете и нанимаете персонал,</b> мы помогаем в обучении
+                и совместно запускаем маркетинговые программы.
+              </p>
+              <p class="steps__days">15-37-й день</p>
+            </li>
+            <li class="steps__item">
+              <p class="steps__text">
+                <b>Монтируете оборудование,</b> производите мерчендайзинг
+                витрин, получаете от нас рекомендации по запуску, открываете
+                точку <b>и начинаете зарабатывать.</b>
+              </p>
+              <p class="steps__days">32-37-й день</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="control">
+        <div class="container">
+          <div class="control__content">
+            <div class="control__img-box">
+              <img
+                src="./img/gallery/control/1.jpg"
+                alt=""
+                class="control__main-img"
+              />
+              <img
+                src="./img/gallery/control/2.jpg"
+                class="control__small-img"
+              />
+              <div class="control__circles-box">
+                <div class="control__circle-bg"></div>
+                <div class="control__large-circle"></div>
+                <div class="control__small-circle"></div>
+              </div>
+            </div>
+            <h2 class="control__title">
+              <span>Управляйте бизнесом компетентно, <br /></span> используя уже
+              готовые бизнес-процессы
+            </h2>
+            <p class="control__text">
+              После запуска вам останется грамотно использовать подробные и
+              точные инструкции по управлению бизнесом, которые уже прописаны:
+            </p>
+            <ul class="control__list">
+              <li class="control__item">
+                Обучение и аттестация сотрудников: успешно опробованные
+                технологии взаимодействия с командой;
+              </li>
+              <li class="control__item">
+                Технологии маркетинга и скрипты продаж;
+              </li>
+              <li class="control__item">
+                Методологии и стандарты обслуживания клиентов;
+              </li>
+              <li class="control__item">
+                Юридические аспекты, бухгалтерия, управленческий учёт;
+              </li>
+              <li class="control__item">Технологии найма сотрудников;</li>
+              <li class="control__item">
+                Технологии операционного управления: регламенты, условия
+                мотивации, способы контроля сотрудников;
+              </li>
+              <li class="control__item">
+                Обеспечим периодическую поставку товаров и запасных частей для
+                телефонов.
+              </li>
+            </ul>
+            <p class="control__text">
+              Также доводим самые свежие идеи и кейсы из собственных центров
+              и прислушиваемся к вашему опыту и мнению.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="result">
+        <div class="container">
+          <h2 class="result__title">
+            В результате
+            <span class="underline">вы действуете уверенно</span> и без ошибок,
+          </h2>
+          <p class="result__text">даже если это ваш первый бизнес.</p>
+          <button class="button button_questions js-present">
+            ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ
+          </button>
+        </div>
+      </section>
+
+      <section class="suit">
+        <div class="container">
+          <h2 class="suit__title">
+            Узнайте, <span>подходите ли вы</span> для ведения этого бизнеса?
+          </h2>
+          <ul class="suit__list">
+            <li class="suit__item">
+              <img src="./img/icons/suit/1.svg" class="suit__item-icon" />
+              <p class="suit__item-title">Есть более 1 года опыта</p>
+              <p class="suit__item-text">работы в товарном бизнесе?</p>
+            </li>
+            <li class="suit__item">
+              <img src="./img/icons/suit/2.svg" class="suit__item-icon" />
+              <p class="suit__item-title">Готовы учиться</p>
+              <p class="suit__item-text">
+                и заниматься операционным управлением?
+              </p>
+            </li>
+            <li class="suit__item">
+              <img src="./img/icons/suit/3.svg" class="suit__item-icon" />
+              <p class="suit__item-title">Вы живёте в городе</p>
+              <p class="suit__item-text">с населением от 500 тыс. человек?</p>
+            </li>
+            <li class="suit__item">
+              <img src="./img/icons/suit/4.svg" class="suit__item-icon" />
+              <p class="suit__item-title">Готовы слушать сильного наставника</p>
+              <p class="suit__item-text">и развиваться под его началом?</p>
+            </li>
+            <li class="suit__item">
+              <img src="./img/icons/suit/5.svg" class="suit__item-icon" />
+              <p class="suit__item-title">Готовы открыть бизнес</p>
+              <p class="suit__item-text">в ближайшие 3 месяца?</p>
+            </li>
+          </ul>
+          <p class="suit__note">
+            Если да – то <span class="underline">давайте с нами!</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="open">
+        <div class="container">
+          <div class="open__container">
+            <div class="open__content">
+              <h2 class="open__title">
+                <span>Откройте салон продажи</span> аксессуаров для мобильной
+                техники
+              </h2>
+              <p class="open__subtitle">
+                и зарабатывайте <br />
+                <span class="underline">от 200&nbsp;000 рублей в месяц</span>
+              </p>
+              <p class="open__note">Заинтересовались или остались вопросы?</p>
+              <p class="open__text">
+                Получите презентацию о компании и анкету партнёра на почту и без
+                спешки ознакомьтесь с деталями откртытия бизнеса, узнайте больше
+                о команде «МАККЕЙС» и процессах в компании.
+              </p>
+            </div>
+            <form class="modal-form">
+              <h3 class="modal-form__title">
+                Узнайте подробнее о бизнесе в нашей подробной презентации
+              </h3>
+              <div class="modal-form__content">
+                <div class="modal-form__input-container">
+                  <div class="modal-form__input-box">
+                    <input
+                      type="text"
+                      placeholder="Юрий Девяткин"
+                      name="name"
+                      data-type="name"
+                      class="modal-form__input"
+                    />
+                  </div>
+                  <div class="modal-form__input-box">
+                    <input
+                      type="tel"
+                      placeholder="+7 (___) ___ ____"
+                      name="phone"
+                      data-type="phone"
+                      class="modal-form__input"
+                    />
+                  </div>
+                  <div class="modal-form__input-box">
+                    <input
+                      type="email"
+                      placeholder="bestpartner@mail.ru"
+                      name="email"
+                      data-type="email"
+                      class="modal-form__input"
+                    />
+                  </div>
+                </div>
+                <button type="submit" class="button button_modal-form">
+                  ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ
+                </button>
+              </div>
+              <p class="modal-form__text">
+                Я подтверждаю, что ознакомлен, и даю согласие на обработку
+                персональных данных на условиях и для целей, определяемых
+                <button type="button" class="js-policy">
+                  Политикой конфиденциальности.
+                </button>
+              </p>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__left-side">
+            <p class="footer__company-info">© «МАККЕЙС», 2016-2021 г.</p>
+            <p class="footer__company-info">ИП Девяткин Юрий Николаевич</p>
+            <p class="footer__company-info">ИНН 745211439552</p>
+            <address class="footer__address">Россия, г. Челябинск</address>
+            <button class="footer__policy js-policy">
+              Политика конфиденциальности
+            </button>
+          </div>
+          <img
+            src="./img/icons/logo-white.svg"
+            alt="Логотип компании"
+            class="footer__logo"
+          />
+          <div class="footer__right-side">
+            <div class="footer__contact-box">
+              <a href="tel:+" class="footer__phone">+7 (909) 817-70-10</a
+              ><button class="footer__callback js-callback">
+                Заказать звонок
+              </button>
+            </div>
+            <div class="footer__social-list">
+              <a href="" target="_blank" class="footer__social"></a
+              ><a href="" target="_blank" class="footer__social"></a>
+            </div>
+            <a href="" target="_blank" class="footer__f5"
+              >Упаковка и продвижение <br />
+               франшиз: «Франчайзинг5»</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <div class="modal">
       <div class="modal__center-wrapper">
-        <form class="modal-form">
+        <form class="modal-form modal-form_modal">
           <h3 class="modal-form__title">
-            Оставьте заявку <span class="js-modal-form-title"></span>
+            <span class="js-modal-form-title"></span>
           </h3>
-          <button class="button button_modal-form js-modal-form-btn">
-            Получить документацию
-          </button>
+          <div class="modal-form__content">
+            <div class="modal-form__input-container">
+              <div class="modal-form__input-box">
+                <input
+                  type="text"
+                  placeholder="Юрий Девяткин"
+                  name="name"
+                  data-type="name"
+                  class="modal-form__input"
+                />
+              </div>
+              <div class="modal-form__input-box">
+                <input
+                  type="tel"
+                  placeholder="+7 (___) ___ ____"
+                  name="phone"
+                  data-type="phone"
+                  class="modal-form__input"
+                />
+              </div>
+              <div class="modal-form__input-box">
+                <input
+                  type="email"
+                  placeholder="bestpartner@mail.ru"
+                  name="email"
+                  data-type="email"
+                  class="modal-form__input"
+                />
+              </div>
+            </div>
+            <button type="submit" class="button button_modal-form js-modal-form-btn">
+              ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ
+            </button>
+          </div>
+          <p class="modal-form__text">
+            Я подтверждаю, что ознакомлен, и даю согласие на обработку
+            персональных данных на условиях и для целей, определяемых
+            <button type="button" class="js-policy">
+              Политикой конфиденциальности.
+            </button>
+          </p>
           <button
             data-modal-close=""
             class="modal__close"
@@ -74,7 +1216,8 @@
           <li class="priv-policy__item">
             2. Настоящая политика Оператора в отношении обработки персональных
             данных (далее – Политика) применяется ко всей информации, которую
-            Оператор может получить о посетителях веб-сайта компании «Название Компании».
+            Оператор может получить о посетителях веб-сайта компании «Название
+            Компании».
           </li>
         </ol>
 
@@ -200,9 +1343,8 @@
             новых продуктах и услугах, специальных предложениях и различных
             событиях. Пользователь всегда может отказаться от получения
             информационных сообщений, направив Оператору письмо на адрес
-            электронной почты с доменом email@mail.ru с пометкой «Отказ
-            от уведомлений о новых продуктах и услугах и специальных
-            предложениях».
+            электронной почты с доменом email@mail.ru с пометкой «Отказ от
+            уведомлений о новых продуктах и услугах и специальных предложениях».
           </li>
           <li class="priv-policy__item">
             3. Обезличенные данные Пользователей, собираемые с помощью сервисов

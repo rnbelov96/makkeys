@@ -1,0 +1,122 @@
+.desc {
+  padding-bottom: 136px;
+
+  @media (max-width: 1150px) {
+    @include bg;
+    background-image: url('/src/img/bgs/desc-bg.jpg');
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 650px) {
+    padding-bottom: 30px;
+  }
+}
+
+.desc__title {
+  margin-top: 80px;
+  @include h1;
+  text-transform: uppercase;
+  @include max-width(830px);
+  margin-bottom: 5px;
+  position: relative;
+
+  @media (max-width: 650px) {
+    margin-top: 20px;
+    font-size: 20px !important;
+  }
+
+  &::before {
+    content: url('/src/img/desc-img.png');
+    position: absolute;
+    right: -947px;
+    top: -327px;
+    z-index: -1;
+
+    @media (max-width: 1150px) {
+      right: -804px;
+    }
+
+    @media (max-width: 950px) {
+      content: none;
+    }
+  }
+
+  span {
+    color: #faa900;
+  }
+}
+
+.desc__subtitle {
+  margin-bottom: 30px;
+  @include h3;
+  @include max-width(750px);
+  @include mobile-mb;
+
+  @media (max-width: 650px) {
+    font-size: 20px !important;
+  }
+
+  span.underline::after {
+    @media (max-width: 650px) {
+      content: none;
+    }
+  }
+}
+
+.desc__text {
+  @include h4;
+  @include max-width(591px);
+  margin-bottom: 30px;
+  @include mobile-mb;
+
+  @media (max-width: 650px) {
+    font-size: 14px !important;
+  }
+}
+
+.desc__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 40px;
+  @include mobile-mb;
+
+  @media (max-width: 650px) {
+    gap: 20px;
+  }
+}
+
+.desc__item {
+  @include max-width(350px);
+  padding-left: 95px;
+  position: relative;
+  @include body;
+
+  @media (max-width: 650px) {
+    font-size: 14px !important;
+    padding-left: 58px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 65px;
+    height: 65px;
+    content: '';
+    @include bg;
+
+    @media (max-width: 650px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i})::before {
+      background-image: url('/src/img/icons/desc/#{$i}.svg');
+    }
+  }
+}

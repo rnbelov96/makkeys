@@ -1,0 +1,10 @@
+.top {
+  min-height: 2332px;
+  @include bg;
+  background-image: url('/src/img/bgs/top-bg.jpg');
+
+  @media (max-width: 1150px) {
+    background-image: none;
+    min-height: auto;
+  }
+}

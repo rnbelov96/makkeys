@@ -1,0 +1,88 @@
+.open {
+  min-height: 826px;
+  @include bg;
+  background-image: url('/src/img/bgs/open-bg.jpg');
+  padding-top: 175px;
+  padding-bottom: 80px;
+
+  @media (max-width: 950px) {
+    padding-top: 218px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 230px;
+    padding-bottom: 40px;
+  }
+}
+
+.open__container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.open__content {
+  @include max-width(635px);
+
+  @media (max-width: 950px) {
+    max-width: 100%;
+  }
+}
+
+.open__title {
+  @include h1;
+  margin-bottom: 6px;
+  color: white;
+
+  span {
+    color: $yellow;
+  }
+}
+
+.open__subtitle {
+  @include h3;
+  color: white;
+  margin-bottom: 30px;
+
+  @media (max-width: 650px) {
+    margin-bottom: 20px;
+  }
+
+  span.underline::after {
+    @media (max-width: 650px) {
+      content: none;
+    }
+  }
+}
+
+.open__note {
+  @include h4;
+  font-weight: bold;
+  margin-bottom: 9px;
+  color: white;
+}
+
+.open__text {
+  @include h4;
+  margin-bottom: 0;
+  position: relative;
+  color: white;
+
+  &::after {
+    content: url('/src/img/icons/arrow-yellow.svg');
+    bottom: -48px;
+    right: -6px;
+    position: absolute;
+
+    @media (max-width: 950px) {
+      content: none;
+    }
+  }
+}

@@ -1,10 +1,12 @@
-html p, li {
+html p,
+li {
   @media (max-width: 650px) {
     font-size: 16px !important;
   }
 }
 
-html h1, h2 {
+html h1,
+h2 {
   @media (max-width: 650px) {
     font-size: 22px !important;
   }
@@ -12,8 +14,8 @@ html h1, h2 {
 
 body {
   background-color: white;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
+  color: $black;
+  font-family: 'Roboto', sans-serif;
   line-height: normal;
 }
 
@@ -24,10 +26,10 @@ main {
 .container {
   position: relative;
   z-index: 1;
-  max-width: 1440px;
+  max-width: 1140px;
   margin: 0 auto;
 
-  @media (max-width: 1450px) {
+  @media (max-width: 1150px) {
     padding: 0 30px;
   }
 
@@ -46,4 +48,20 @@ main {
   border: 0;
   margin: -1px;
   clip: rect(0 0 0 0);
+}
+
+.underline {
+  position: relative;
+  &::after {
+    z-index: -1;
+    width: 100%;
+    left: 50.4%;
+    transform: translateX(-50%) skewX(47deg);
+    bottom: 0px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: #69B100;
+    content: '';
+    position: absolute;
+  }
 }
