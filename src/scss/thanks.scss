@@ -46,7 +46,10 @@
 .thanks {
   flex: 1 0 auto;
   padding-bottom: 47px;
-  overflow: hidden;
+
+  @media (max-width: 1550px) {
+    overflow: hidden;
+  }
 
   @media (max-width: 650px) {
     padding-bottom: 30px;
@@ -310,6 +313,10 @@
   display: block;
   margin-bottom: 56px;
   filter: drop-shadow(10px 10px 115px rgba(238, 160, 84, 0.25));
+
+  @media (max-width: 1550px) {
+    filter: none;
+  }
 }
 
 .thanks__owner-name {
@@ -377,4 +384,8 @@
   opacity: 0.4;
   filter: blur(309px);
   z-index: -2;
+
+  @media (max-width: 1550px) {
+    display: none;
+  }
 }

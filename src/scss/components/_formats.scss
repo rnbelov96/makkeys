@@ -26,6 +26,10 @@
     text-align: center;
   }
 
+  @media (max-width: 650px) {
+    margin-bottom: 50px;
+  }
+
   span {
     color: $yellow;
   }
@@ -60,6 +64,13 @@
 
   @media (max-width: 650px) {
     padding-left: 20px;
+    margin-bottom: 55px;
+  }
+
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i})::before {
+      content: url('/src/img/icons/formats/0#{$i}.png');
+    }
   }
 
   &:nth-child(1) {
@@ -77,6 +88,17 @@
       filter: blur(309px);
       z-index: 1;
       @include central-align;
+    }
+
+    &::before {
+      @media (max-width: 650px) {
+        content: '';
+        width: 75px;
+        height: 54.4px;
+        @include bg;
+        background-image: url('/src/img/icons/formats/01.png');
+        top: -38px;
+      }
     }
   }
 
@@ -98,6 +120,18 @@
       z-index: 1;
       @include central-align;
     }
+
+    &::before {
+      @media (max-width: 650px) {
+        content: '';
+        width: 75px;
+        height: 54.4px;
+        @include bg;
+        background-size: contain;
+        background-image: url('/src/img/icons/formats/02.png');
+        top: -38px;
+      }
+    }
   }
 
   &:nth-child(3) {
@@ -116,6 +150,18 @@
       z-index: 1;
       @include central-align;
     }
+
+    &::before {
+      @media (max-width: 650px) {
+        content: '';
+        width: 75px;
+        height: 54.4px;
+        @include bg;
+        background-size: contain;
+        background-image: url('/src/img/icons/formats/03.png');
+        top: -38px;
+      }
+    }
   }
 
   &::before {
@@ -126,12 +172,6 @@
     @media (max-width: 1350px) {
       left: 0px;
       top: -50px;
-    }
-  }
-
-  @for $i from 1 through 3 {
-    &:nth-child(#{$i})::before {
-      content: url('/src/img/icons/formats/0#{$i}.png');
     }
   }
 
