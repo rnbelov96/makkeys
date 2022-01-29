@@ -1,5 +1,6 @@
 import './scss/style.scss';
 import './ts/modals';
+import './ts/fancy-box';
 import './ts/slider';
 // import './ts/calc';
 import './ts/setup-forms';

@@ -48,6 +48,7 @@
 
 .open__subtitle {
   @include h3;
+  font-size: 27px;
   color: white;
   margin-bottom: 30px;
 
@@ -77,12 +78,19 @@
 
   &::after {
     content: url('/src/img/icons/arrow-yellow.svg');
-    bottom: -48px;
-    right: -6px;
+    bottom: -79px;
+    right: -28px;
     position: absolute;
 
     @media (max-width: 950px) {
       content: none;
     }
   }
+}
+
+.open__offer-text {
+  margin-bottom: 8px;
+  @include h4;
+  font-weight: bold;
+  color: #faa900;
 }

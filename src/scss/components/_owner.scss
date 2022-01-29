@@ -4,7 +4,7 @@
   position: relative;
   z-index: 1;
 
-  @media (max-width: 1020px) {
+  @media (max-width: 1150px) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -20,18 +20,19 @@
   margin-left: auto;
   position: relative;
 
-  @media (max-width: 1020px) {
+  @media (max-width: 1150px) {
     margin-right: auto;
   }
 
   &::before {
     content: url('/src/img/owner-img.jpg');
+    zoom: 0.5;
     position: absolute;
     z-index: -1;
-    left: -883px;
-    top: -273px;
+    left: -1217px;
+    top: 9px;
 
-    @media (max-width: 1020px) {
+    @media (max-width: 1150px) {
       content: none;
     }
   }
@@ -50,14 +51,14 @@
 
 .owner__text-box {
   margin-bottom: 13px;
-}
 
-.owner__text {
-  @include body;
-  margin-bottom: 10px;
+  p {
+    @include body;
+    margin-bottom: 10px;
 
-  &:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -74,6 +75,18 @@
   position: relative;
   padding-left: 10px;
   padding-right: 10px;
+  position: absolute;
+  @include max-width(444px);
+  left: -477px;
+  bottom: 23px;
+
+  @media (max-width: 1150px) {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &::before {
     position: absolute;
@@ -81,7 +94,7 @@
     right: 32px;
     bottom: -69px;
 
-    @media (max-width: 1020px) {
+    @media (max-width: 1150px) {
       content: none;
     }
   }
@@ -91,13 +104,15 @@
   margin-left: auto;
   margin-right: auto;
   display: none;
+  zoom: 0.5;
 
-  @media (max-width: 1020px) {
+  @media (max-width: 1150px) {
     display: block;
   }
 
   @media (max-width: 650px) {
     width: 300px;
+    zoom: 0;
   }
 }
 
@@ -110,7 +125,7 @@
   margin-bottom: -60px;
   display: none;
 
-  @media (max-width: 1020px) {
+  @media (max-width: 1150px) {
     display: block;
   }
 
@@ -123,9 +138,15 @@
   @include body;
   margin-bottom: 0;
   text-align: right;
+  position: absolute;
+  left: -182px;
+  bottom: -49px;
 
-  @media (max-width: 1020px) {
+  @media (max-width: 1150px) {
     text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
   }
 
   span {

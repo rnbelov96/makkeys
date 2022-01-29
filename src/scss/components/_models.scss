@@ -1,5 +1,6 @@
 .models {
-  padding-bottom: 162px;
+  padding-top: 25px;
+  padding-bottom: 90px;
   color: white;
 
   @media (max-width: 1150px) {
@@ -16,7 +17,7 @@
 
 .models__title {
   @include h2;
-  margin-bottom: 7px;
+  margin-bottom: 40px;
 
   span {
     color: $green;
@@ -126,7 +127,7 @@
 
   &::before {
     position: absolute;
-    content: url('/src/img/models-logo.svg');
+    content: url('/src/img/models-logo.png');
     left: 28px;
     top: -5px;
 
@@ -151,22 +152,27 @@
   }
 
   &:nth-child(2) {
-    @include max-width(471px+40px);
-    margin-bottom: 31px;
+    @include max-width(523px);
+    margin-bottom: 27px;
   }
 
   &:nth-child(3) {
-    @include max-width(447px+40px);
-    margin-bottom: 44px;
+    @include max-width(494px);
+    margin-bottom: 31px;
   }
 
   &:nth-child(4) {
-    @include max-width(471px+40px);
-    margin-bottom: 54px;
+    @include max-width(497px);
+    margin-bottom: 27px;
   }
 
   &:nth-child(5) {
-    @include max-width(559px+40px);
+    @include max-width(538px);
+    margin-bottom: 27px;
+  }
+
+  &:nth-child(6) {
+    @include max-width(614px);
     margin-bottom: 0;
 
     @media (max-width: 1150px) {

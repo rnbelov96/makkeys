@@ -6,6 +6,7 @@
   position: relative;
   top: -41px;
   margin-bottom: -41px;
+  background-position-y: bottom;
 
   @media (max-width: 650px) {
     padding-top: 70px;
@@ -45,7 +46,7 @@
   background: #ffffff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
-  @include max-width(730px);
+  @include max-width(732px);
   padding-left: 40px;
   padding-right: 20px;
   padding-top: 24px;
@@ -79,6 +80,16 @@
       top: 0px;
     }
 
+    .formats__type-box {
+      &:nth-child(1)::before {
+        content: url('/src/img/icons/formats/franch.svg');
+      }
+
+      &:nth-child(2)::before {
+        content: url('/src/img/icons/formats/invest.svg');
+      }
+    }
+
     .formats__item-img-bg {
       position: absolute;
       width: 517px;
@@ -86,7 +97,7 @@
       background: #69b100;
       opacity: 0.4;
       filter: blur(309px);
-      z-index: 1;
+      z-index: -1;
       @include central-align;
     }
 
@@ -105,6 +116,10 @@
   &:nth-child(2) {
     margin-left: auto;
 
+    .formats__type-list {
+      gap: 6px;
+    }
+
     .formats__item-img-box {
       left: -445px;
       top: 0px;
@@ -117,7 +132,7 @@
       background: $yellow;
       opacity: 0.4;
       filter: blur(309px);
-      z-index: 1;
+      z-index: -1;
       @include central-align;
     }
 
@@ -129,36 +144,6 @@
         @include bg;
         background-size: contain;
         background-image: url('/src/img/icons/formats/02.png');
-        top: -38px;
-      }
-    }
-  }
-
-  &:nth-child(3) {
-    .formats__item-img-box {
-      right: -477px;
-      top: 0px;
-    }
-
-    .formats__item-img-bg {
-      position: absolute;
-      width: 517px;
-      height: 517px;
-      background: #69b100;
-      opacity: 0.4;
-      filter: blur(309px);
-      z-index: 1;
-      @include central-align;
-    }
-
-    &::before {
-      @media (max-width: 650px) {
-        content: '';
-        width: 75px;
-        height: 54.4px;
-        @include bg;
-        background-size: contain;
-        background-image: url('/src/img/icons/formats/03.png');
         top: -38px;
       }
     }
@@ -249,6 +234,18 @@
 .formats__type-name {
   @include h4;
   margin-bottom: 0;
+  font-weight: bold;
+}
+
+.formats__type-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 650px) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .formats__type-place {

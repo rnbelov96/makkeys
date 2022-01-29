@@ -27,6 +27,7 @@
 .questions__title {
   @include h2;
   font-size: 42px;
+  text-transform: uppercase;
   text-align: center;
   display: inline-block;
   position: relative;

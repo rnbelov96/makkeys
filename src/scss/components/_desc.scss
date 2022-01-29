@@ -48,7 +48,7 @@
 
 .desc__subtitle {
   margin-bottom: 30px;
-  @include h3;
+  @include h4;
   @include max-width(750px);
   @include mobile-mb;
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Франшиза «Маккейс»</title>
+    <title>Франшиза от профессионалов ритейла гаджетов и аксессуаров</title>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.5.2/validator.min.js"
       integrity="sha512-vZEoK8xRncku4g5GANHh5zobUjeCMbZkSEahrADeAcRlk/1Ignf8sAKojkV4RZLkPw145+ILJFisI2pnjsPtGQ=="
@@ -14,6 +14,20 @@
       integrity="sha512-qCt/OTd55ilhuXLRNAp/G8uONXUrpFoDWsXDtyjV4wMbvh46dOEjvHZyWkvnffc6I2g/WHSKsaFUCm0RISxnzQ=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+      integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.map&lang=ru-RU"></script>
   </head>
   <body>
@@ -24,12 +38,15 @@
             <header class="header">
               <div class="header__content">
                 <img
-                  src="./img/icons/logo-black.svg"
+                  src="./img/icons/logo-black.png"
+                  width="215"
+                  height="67"
                   alt="Логотип компании"
                   class="header__logo"
                 />
                 <p class="header__text">
-                  Продаём технику, аксессуары и товары для дома
+                  Франшиза магазина техники, аксессуаров для мобильных <br />
+                  телефонов и товары для жизни
                 </p>
                 <div class="header__contact-box">
                   <a href="tel:+" class="header__phone">+7 (922) 750 08 99</a
@@ -40,12 +57,12 @@
               </div>
             </header>
             <h1 class="desc__title">
-              <span>Откройте за 6 недель бизнес</span> по продаже техники,
+              <span>Откройте франшизу</span> по продаже техники,
             </h1>
             <h2 class="desc__subtitle">
-              аксессуаров для гаджетов и товаров для дома
-              <span class="underline"
-                >при поддержке основателя с 10-летним опытом</span
+              аксессуаров для мобильных телефонов и товаров для жизни и
+              <span class="underline underline_small-text"
+                >начните зарабатывать от 2 700 000 рублей в год.</span
               >
             </h2>
             <p class="desc__text">
@@ -54,8 +71,7 @@
             </p>
             <ul class="desc__list">
               <li class="desc__item">
-                Товары от производителей Китая, за которые вам скажут спасибо, и
-                вы сможете достойно зарабатывать
+                Прямые поставки из Китая от партнёров производителей
               </li>
               <li class="desc__item">
                 Проверенные технологии маркетинга и продаж
@@ -123,10 +139,6 @@
             <h2 class="models__title">
               2 проверенные <span>бизнес-модели</span>
             </h2>
-            <p class="models__text">
-              14 000 постоянных клиентов сказали мерси, отоварившись в таких
-              форматах наших магазинов, как:
-            </p>
             <div class="models__slider-list">
               <div class="models__slider-box">
                 <p class="models__slider-title">
@@ -135,19 +147,28 @@
                 <section class="slider-island">
                   <div class="slider-island__wrapper">
                     <div class="slider-island__img-box">
-                      <div class="slider-island__img-item">
+                      <div
+                        class="slider-island__img-item"
+                        data-fancybox="slider-images"
+                      >
                         <img
                           src="./img/gallery/slider-left/1.png"
                           alt="Фото островка"
                         />
                       </div>
-                      <div class="slider-island__img-item">
+                      <div
+                        class="slider-island__img-item"
+                        data-fancybox="slider-images"
+                      >
                         <img
                           src="./img/gallery/slider-left/2.png"
                           alt="Фото островка"
                         />
                       </div>
-                      <div class="slider-island__img-item">
+                      <div
+                        class="slider-island__img-item"
+                        data-fancybox="slider-images"
+                      >
                         <img
                           src="./img/gallery/slider-left/3.png"
                           alt="Фото островка"
@@ -162,7 +183,7 @@
                   <p
                     class="models__slider-income-numbers models__slider-income-numbers_green"
                   >
-                    от <span>350 тыс. руб.</span> в месяц
+                    от <span>180 тыс. руб.</span> в месяц
                   </p>
                 </div>
               </div>
@@ -173,19 +194,28 @@
                 <section class="slider-shop">
                   <div class="slider-shop__wrapper">
                     <div class="slider-shop__img-box">
-                      <div class="slider-shop__img-item">
+                      <div
+                        class="slider-shop__img-item"
+                        data-fancybox="slider-images"
+                      >
                         <img
                           src="./img/gallery/slider-right/1.png"
                           alt="Фото магазина"
                         />
                       </div>
-                      <div class="slider-shop__img-item">
+                      <div
+                        class="slider-shop__img-item"
+                        data-fancybox="slider-images"
+                      >
                         <img
                           src="./img/gallery/slider-right/2.png"
                           alt="Фото магазина"
                         />
                       </div>
-                      <div class="slider-shop__img-item">
+                      <div
+                        class="slider-shop__img-item"
+                        data-fancybox="slider-images"
+                      >
                         <img
                           src="./img/gallery/slider-right/3.png"
                           alt="Фото магазина"
@@ -200,7 +230,7 @@
                   <p
                     class="models__slider-income-numbers models__slider-income-numbers_yellow"
                   >
-                    от <span>200 тыс. руб.</span> в месяц
+                    от <span>350 тыс. руб.</span> в месяц
                   </p>
                 </div>
               </div>
@@ -210,6 +240,11 @@
                 <p class="models__item-text">
                   Проверенная годами бизнес-модель по продаже электроники,
                   аксессуаров и товаров для жизни;
+                </p>
+              </li>
+              <li class="models__item">
+                <p class="models__item-text">
+                  Кризис и сезонность не влияют на бизнес
                 </p>
               </li>
               <li class="models__item">
@@ -237,14 +272,14 @@
                 <ul class="models__item-list">
                   <li class="models__item-item">
                     Система повторного привлечения клиентов: бонусы,
-                    моментальная лоторея и др.
+                    моментальная лоторея, розыгрыши и др.
                   </li>
                   <li class="models__item-item">
                     Клиентоориентированность команды — часть корпоративной
                     культуры
                   </li>
                   <li class="models__item-item">
-                    Современное, стильное оформление каждой точки продаж
+                    Современное, креативное оформление каждой точки продаж
                   </li>
                 </ul>
               </li>
@@ -321,41 +356,65 @@
               Подробнее о «МАККЕЙС» <span>от основателя</span>
             </h2>
             <div class="owner__text-box">
-              <p class="owner__text">
-                Мы первые в Челябинске начали заниматься аксессуарами
-                для мобильных телефонов, начинали с оптовых продаж в 2014 г.
-              </p>
-              <p class="owner__text">
-                <b>В апреле 2016 года открыли свою первую торговую точку</b>
-                в виде «острова» в ТЦ.
-              </p>
-              <p class="owner__text">
+              <p>
                 <b
-                  >Сейчас действуют три «острова» в ТЦ и один флагманский
-                  магазин.</b
+                  >Маккейс — это профессиональный магазин техники, смартфонов,
+                  аксессуаров для телефонов, лайфстайл товаров,</b
                 >
-                Каждый день работаем над тем, чтобы сделать наш сервис
-                ещё качественнее, чтобы покупателям было приятно находиться
-                в магазине, хотелось вновь вернуться и рекомендовать друзьям,
-                знакомым.
+                напрямую из Китая, с превосходным сервисом и низкими ценами.
               </p>
-              <p class="owner__text">
-                Ищем и продаём эксклюзивные аксессуары,
-                <b>
-                  еженедельно пополняем ассортимент новыми товарными позициями.
-                </b>
+              <p>МАККЕЙС был основан в 2014 году как оптовая компания.</p>
+              <p>
+                <b
+                  >В 2016 году мы сфокусировались на розничной торговле
+                  и ремонте телефонов.</b
+                >
+                Открыли в центре Челябинска первый флагманский магазин
+                и три островных отдела в ТРК города, чтобы привлечь ещё больше
+                покупателей.
               </p>
-              <p class="owner__text">
-                За годы работы, путём проб и ошибок,
-                <b>
-                  построили 2 прибыльные бизнес-модели и мы готовы
-                  ими поделиться.
-                </b>
+              <p>
+                Через месяц после открытия отделов в ТРК,
+                <b>Маккейс стал пользоваться высоким спросом у горожан</b>,
+                покупатели тепло приняли открытие магазинов таких форматов,
+                так как <b>такого аналога и формата, в Российских городах нет</b
+                >, а именно, отделы в свежем дизайне со стильной выкладкой,
+                эксклюзивной и не дорогой продукцией.
+              </p>
+              <p>
+                Считаем, что <b>наша продукция актуальна и востребована.</b>
+                Сейчас нужно удивлять, стильностью интерьера, стильностью отдела
+                в ТРК, обслуживанием, чтобы было приятно находиться в магазине
+                и хотелось вновь вернуться и советовать друзьям, знакомым.
+              </p>
+              <p>
+                Мы на протяжении 7 лет зарекомендовали себя, с превосходным
+                сервисом и низкими ценами.
+                <b
+                  >В МАККЕЙС качественные и эксклюзивные аксессуары, которых
+                  нет на АлиЭкспресс и Маркетплейсах.</b
+                >
+              </p>
+              <p>
+                На данный момент, под брендом МАККЕЙС, мы с партнёрами из Китая
+                стали производить защитные стекла для мобильных телефонов.
+              </p>
+              <p>
+                В будущем
+                <b
+                  >МАККЕЙС планирует запустить собственное производство
+                  аксессуаров для телефоном под собственным брендом.</b
+                >
+                Мы уверены,
+                <b
+                  >производимая продукция будет пользоваться спросом,
+                  в частности, благодаря грамотной ценовой политике компании.</b
+                >
               </p>
             </div>
             <p class="owner__note">
-              Присоединяйтесь к команде «МАККЕЙС» и зарабатывайте на нужных
-              для современных людей товарах.
+              Присоединяйтесь к команде <br />
+              «МАККЕЙС»
             </p>
             <div class="onwer__owner-box">
               <img
@@ -474,7 +533,7 @@
       <section class="formats">
         <div class="container">
           <h2 class="formats__title">
-            <span>3 формата сотрудничества —</span> выбирайте удобные для вас
+            <span>2 формата сотрудничества —</span> выбирайте удобные для вас
             условия
           </h2>
           <ol class="formats__list">
@@ -487,49 +546,32 @@
                 />
               </div>
               <p class="formats__item-title">
-                Приобретение <span>франшизы</span> «МАККЕЙС»
+                Приобретение <span>франшизы</span> «МАККЕЙС» для продажи на
+                маркетплейсах
               </p>
               <div class="formats__type-list">
                 <div class="formats__type-box">
-                  <p class="formats__type-name">«Остров»</p>
-                  <p class="formats__type-place">до 10 кв. м</p>
-                  <p class="formats__type-number">350 тыс. руб.</p>
+                  <p class="formats__type-name formats__type-name_bold">
+                    На покупку <br />франшизы
+                  </p>
+                  <p class="formats__type-number">от 399 тыс. руб.</p>
                 </div>
                 <div class="formats__type-box">
-                  <p class="formats__type-name">Флагманский магазин</p>
-                  <p class="formats__type-place">от 25 кв. м</p>
-                  <p class="formats__type-number">400 тыс. руб.</p>
+                  <p class="formats__type-name">
+                    Инвестиции <br />
+                    на закупку товара
+                  </p>
+                  <p class="formats__type-number formats__type-name_bold">
+                    от 299 тыс. руб.
+                  </p>
                 </div>
               </div>
-              <p class="formats__item-list-title">
-                При данном пакете вы получаете:
-              </p>
-              <ul class="formats__item-list">
-                <li class="formats__item-item">
-                  Внутренние регламенты компании, консультации по возникшим
-                  вопросам;
-                </li>
-                <li class="formats__item-item">
-                  Первоначальный подбор площадей по стандартам компании
-                  «МАККЕЙС»;
-                </li>
-                <li class="formats__item-item">
-                  Консультации по юридическому оформлению деятельности;
-                </li>
-                <li class="formats__item-item">
-                  Перечень оборудования и сопутствующих товаров, необходимых для
-                  начала работы;
-                </li>
-                <li class="formats__item-item">
-                  Первичную поставку товарного запаса;
-                </li>
-                <li class="formats__item-item">
-                  Макеты маркетинговых материалов;
-                </li>
-                <li class="formats__item-item">
-                  Обучение для вас и ваших сотрудников.
-                </li>
-              </ul>
+              <img
+                src="./img/formats-laptops.jpg"
+                width="505"
+                height="252.21"
+                class="formats__type-img"
+              />
             </li>
             <li class="formats__item">
               <div class="formats__item-img-box">
@@ -546,12 +588,12 @@
                 <div class="formats__type-box">
                   <p class="formats__type-name">«Остров»</p>
                   <p class="formats__type-place">до 10 кв. м</p>
-                  <p class="formats__type-number">1,5 млн руб.</p>
+                  <p class="formats__type-number">от 900 тыс. руб.</p>
                 </div>
                 <div class="formats__type-box">
                   <p class="formats__type-name">Флагманский магазин</p>
                   <p class="formats__type-place">от 25 кв. м</p>
-                  <p class="formats__type-number">4,2 млн руб.</p>
+                  <p class="formats__type-number">от 2,8 млн руб.</p>
                 </div>
               </div>
               <ul class="formats__item-list">
@@ -563,47 +605,10 @@
                   Выводим точку на плановые показатели по чистой прибыли.
                 </li>
                 <li class="formats__item-item">
-                  Продаём вам работающий, прибыльный бизнес.
-                </li>
-              </ul>
-            </li>
-            <li class="formats__item">
-              <div class="formats__item-img-box">
-                <div class="formats__item-img-bg"></div>
-                <img
-                  src="./img/gallery/formats/3.png"
-                  class="formats__item-img"
-                />
-              </div>
-              <p class="formats__item-title">
-                Бизнес-предложение <span>White label</span>
-              </p>
-              <div class="formats__type-list">
-                <div class="formats__type-box">
-                  <p class="formats__type-name">«Остров»</p>
-                  <p class="formats__type-place">до 10 кв. м</p>
-                  <p class="formats__type-number">1 млн руб.</p>
-                </div>
-              </div>
-              <p class="formats__item-list-title">
-                Для предпринимателей, выбирающих свободное развитие за пределами
-                общей сети:
-              </p>
-              <ul class="formats__item-list">
-                <li class="formats__item-item">
-                  Вы запускаете бизнес по проверенным технологиям.
+                  Продаём вам готовый, работающий, прибыльный бизнес.
                 </li>
                 <li class="formats__item-item">
-                  Вы не являетесь участником франчайзинговой сети, а работаете
-                  под своим брендом.
-                </li>
-                <li class="formats__item-item">
-                  Обязательное роялти при данном пакете не взимается.
-                </li>
-                <li class="formats__item-item">
-                  В случае необходимости мы можем оказывать сопровождение вашего
-                  бизнеса во время операционной деятельности (оплачивается
-                  отдельно по запросу в формате, схожем с роялти).
+                  Возьмем на себя всю работу по поставке товара
                 </li>
               </ul>
             </li>
@@ -761,8 +766,8 @@
       <section class="invest">
         <div class="container">
           <h2 class="invest__title">
-            Выверенные
-            <span>инвестиции для прибыли</span> от 120&nbsp;000 рублей в месяц
+            <span>Для старта бизнеса с прибылью </span> <br />
+            от 2&nbsp;700&nbsp;000 рублей в год, вам потребуется
           </h2>
           <ul class="invest__list">
             <li class="invest__item">
@@ -776,10 +781,8 @@
                     <p class="invest__item-number">350 тыс. руб.</p>
                   </li>
                   <li class="invest__item-item">
-                    <p class="invest__item-name">
-                      Инвестиции (без паушального взноса)
-                    </p>
-                    <p class="invest__item-number">от 1 млн. руб.</p>
+                    <p class="invest__item-name">Инвестиции</p>
+                    <p class="invest__item-number">от 900 тыс. руб.</p>
                   </li>
                   <li class="invest__item-item">
                     <p class="invest__item-name">Роялти</p>
@@ -787,7 +790,7 @@
                   </li>
                   <li class="invest__item-item">
                     <p class="invest__item-name">Окупаемость</p>
-                    <p class="invest__item-number">от 15 месяцев</p>
+                    <p class="invest__item-number">от 5 месяцев</p>
                   </li>
                   <li class="invest__item-item">
                     <p class="invest__item-name">Средняя выручка</p>
@@ -798,7 +801,7 @@
                   <li class="invest__item-item">
                     <p class="invest__item-name">Средняя чистая прибыль</p>
                     <p class="invest__item-number invest__item-number_green">
-                      <b>от 120 тыс.руб</b>
+                      <b>от 180 тыс.руб</b>
                     </p>
                   </li>
                 </ul>
@@ -815,9 +818,7 @@
                     <p class="invest__item-number">400 тыс. руб.</p>
                   </li>
                   <li class="invest__item-item">
-                    <p class="invest__item-name">
-                      Инвестиции (без паушального взноса)
-                    </p>
+                    <p class="invest__item-name">Инвестиции</p>
                     <p class="invest__item-number">от 2,8 млн. руб.</p>
                   </li>
                   <li class="invest__item-item">
@@ -826,18 +827,18 @@
                   </li>
                   <li class="invest__item-item">
                     <p class="invest__item-name">Окупаемость</p>
-                    <p class="invest__item-number">от 25 месяцев</p>
+                    <p class="invest__item-number">от 15 месяцев</p>
                   </li>
                   <li class="invest__item-item">
                     <p class="invest__item-name">Средняя выручка</p>
                     <p class="invest__item-number invest__item-number_yellow">
-                      <b>от 450 тыс.руб. </b>
+                      <b>от 650 тыс.руб. </b>
                     </p>
                   </li>
                   <li class="invest__item-item">
                     <p class="invest__item-name">Средняя чистая прибыль</p>
                     <p class="invest__item-number invest__item-number_yellow">
-                      <b>от 200 тыс.руб</b>
+                      <b>от 350 тыс.руб</b>
                     </p>
                   </li>
                 </ul>
@@ -853,7 +854,9 @@
           <p class="fin__text">
             Получите бесплатную консультацию по экономике проекта
           </p>
-          <button class="button button_questions js-callback">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+          <button class="button button_questions js-callback">
+            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+          </button>
         </div>
       </section>
 
@@ -925,13 +928,10 @@
           <div class="control__content">
             <div class="control__img-box">
               <img
-                src="./img/gallery/control/1.jpg"
-                alt=""
+                src="./img/gallery/control/1.png"
+                width="452"
+                height="452"
                 class="control__main-img"
-              />
-              <img
-                src="./img/gallery/control/2.jpg"
-                class="control__small-img"
               />
               <div class="control__circles-box">
                 <div class="control__circle-bg"></div>
@@ -940,8 +940,8 @@
               </div>
             </div>
             <h2 class="control__title">
-              <span>Управляйте бизнесом компетентно, <br /></span> используя уже
-              готовые бизнес-процессы
+              <span>Управляйте бизнесом,</span>
+              используя уже готовые бизнес-процессы
             </h2>
             <p class="control__text">
               После запуска вам останется грамотно использовать подробные и
@@ -971,10 +971,6 @@
                 телефонов.
               </li>
             </ul>
-            <p class="control__text">
-              Также доводим самые свежие идеи и кейсы из собственных центров
-              и прислушиваемся к вашему опыту и мнению.
-            </p>
           </div>
         </div>
       </section>
@@ -995,7 +991,8 @@
       <section class="suit">
         <div class="container">
           <h2 class="suit__title">
-            Узнайте, <span>подходите ли вы</span> для ведения этого бизнеса?
+            Для ведения бизнеса
+            <span>вам потребуется:</span>
           </h2>
           <ul class="suit__list">
             <li class="suit__item">
@@ -1027,7 +1024,7 @@
             </li>
           </ul>
           <p class="suit__note">
-            Если да – то <span class="underline">давайте с нами!</span>
+            <span class="underline">Вместе мы лучше</span>
           </p>
         </div>
       </section>
@@ -1037,12 +1034,17 @@
           <div class="open__container">
             <div class="open__content">
               <h2 class="open__title">
-                <span>Откройте салон продажи</span> аксессуаров для мобильной
-                техники
+                <span>Откройте магазин по продаже</span> аксессуаров и мобильных
+                телефонов
               </h2>
               <p class="open__subtitle">
-                и зарабатывайте <br />
-                <span class="underline">от 200&nbsp;000 рублей в месяц</span>
+                и зарабатывайте
+                <span class="underline underline_small-text"
+                  >от 2&nbsp;700&nbsp;000&nbsp;рублей в месяц</span
+                >
+              </p>
+              <p class="open__offer-text">
+                Маккейс предлагает Вам стать нашим франчайзи
               </p>
               <p class="open__note">Заинтересовались или остались вопросы?</p>
               <p class="open__text">
@@ -1115,7 +1117,9 @@
             </button>
           </div>
           <img
-            src="./img/icons/logo-white.svg"
+            src="./img/icons/logo-footer.png"
+            width="272"
+            height="49.35"
             alt="Логотип компании"
             class="footer__logo"
           />
@@ -1130,10 +1134,6 @@
               <a href="" target="_blank" class="footer__social"></a
               ><a href="" target="_blank" class="footer__social"></a>
             </div>
-            <a href="" target="_blank" class="footer__f5"
-              >Упаковка и продвижение <br />
-               франшиз: «Франчайзинг5»</a
-            >
           </div>
         </div>
       </div>
@@ -1175,7 +1175,10 @@
                 />
               </div>
             </div>
-            <button type="submit" class="button button_modal-form js-modal-form-btn">
+            <button
+              type="submit"
+              class="button button_modal-form js-modal-form-btn"
+            >
               ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ
             </button>
           </div>

@@ -52,16 +52,23 @@ main {
 
 .underline {
   position: relative;
+
   &::after {
     z-index: -1;
     width: 100%;
     left: 50.4%;
     transform: translateX(-50%) skewX(47deg);
-    bottom: 0px;
+    bottom: 3px;
     height: 16px;
     border-radius: 4px;
     background-color: #69B100;
     content: '';
     position: absolute;
+  }
+
+  &_small-text {
+    &::after {
+      bottom: -5px;
+    }
   }
 }

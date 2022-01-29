@@ -21,6 +21,7 @@
   position: relative;
   @include x-align;
   margin-bottom: 9px;
+  text-transform: uppercase;
 
   span.underline::after {
     background-color: $yellow;
