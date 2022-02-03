@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Франшиза от профессионалов ритейла гаджетов и аксессуаров</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"
+      integrity="sha512-pY1t/ADgTwbfGbw0+mRGd33EroA5YgRUWhQNFpPIAdBzyoSb38FsFrf4wBTcS3GFPdTfgtpRrbGCkdl2C2OXYA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.5.2/validator.min.js"
       integrity="sha512-vZEoK8xRncku4g5GANHh5zobUjeCMbZkSEahrADeAcRlk/1Ignf8sAKojkV4RZLkPw145+ILJFisI2pnjsPtGQ=="
@@ -60,9 +70,15 @@
               <span>Откройте франшизу</span> по продаже техники,
             </h1>
             <h2 class="desc__subtitle">
-              аксессуаров для мобильных телефонов и товаров для жизни и
+              <span class="bold">аксессуаров для мобильных телефонов</span>
+              <br />
+              и товаров для жизни и
               <span class="underline underline_small-text"
-                >начните зарабатывать от 2 700 000 рублей в год.</span
+                >начните
+                <b class="underline underline_desc"
+                  >зарабатывать от 2&nbsp;700&nbsp;000 рублей</b
+                >
+                <b class="underline underline_desc">в&nbsp;год.</b></span
               >
             </h2>
             <p class="desc__text">
@@ -147,30 +163,21 @@
                 <section class="slider-island">
                   <div class="slider-island__wrapper">
                     <div class="slider-island__img-box">
-                      <div
-                        class="slider-island__img-item"
-                        data-fancybox="slider-images"
-                      >
+                      <div class="slider-island__img-item">
                         <img
-                          src="./img/gallery/slider-left/1.png"
+                          src="./img/gallery/slider-left/1.jpg"
                           alt="Фото островка"
                         />
                       </div>
-                      <div
-                        class="slider-island__img-item"
-                        data-fancybox="slider-images"
-                      >
+                      <div class="slider-island__img-item">
                         <img
-                          src="./img/gallery/slider-left/2.png"
+                          src="./img/gallery/slider-left/2.jpg"
                           alt="Фото островка"
                         />
                       </div>
-                      <div
-                        class="slider-island__img-item"
-                        data-fancybox="slider-images"
-                      >
+                      <div class="slider-island__img-item">
                         <img
-                          src="./img/gallery/slider-left/3.png"
+                          src="./img/gallery/slider-left/3.jpg"
                           alt="Фото островка"
                         />
                       </div>
@@ -194,30 +201,21 @@
                 <section class="slider-shop">
                   <div class="slider-shop__wrapper">
                     <div class="slider-shop__img-box">
-                      <div
-                        class="slider-shop__img-item"
-                        data-fancybox="slider-images"
-                      >
+                      <div class="slider-shop__img-item">
                         <img
-                          src="./img/gallery/slider-right/1.png"
+                          src="./img/gallery/slider-right/1.jpg"
                           alt="Фото магазина"
                         />
                       </div>
-                      <div
-                        class="slider-shop__img-item"
-                        data-fancybox="slider-images"
-                      >
+                      <div class="slider-shop__img-item">
                         <img
-                          src="./img/gallery/slider-right/2.png"
+                          src="./img/gallery/slider-right/2.jpg"
                           alt="Фото магазина"
                         />
                       </div>
-                      <div
-                        class="slider-shop__img-item"
-                        data-fancybox="slider-images"
-                      >
+                      <div class="slider-shop__img-item">
                         <img
-                          src="./img/gallery/slider-right/3.png"
+                          src="./img/gallery/slider-right/3.jpg"
                           alt="Фото магазина"
                         />
                       </div>
@@ -434,83 +432,46 @@
 
       <section class="goods">
         <div class="container">
-          <h2 class="goods__title">
-            Продаём более 15 000 <span>востребованных товаров</span>
-          </h2>
-          <ul class="goods__list">
-            <li class="goods__item">
-              <img
-                src="./img/icons/goods/1.png"
-                alt="Фото товара"
-                class="goods__item-img"
-              />
-              <p class="goods__item-text">Чехлы для мобильных устройств</p>
-            </li>
-            <li class="goods__item">
-              <img
-                src="./img/icons/goods/2.png"
-                alt="Фото товара"
-                class="goods__item-img"
-              />
-              <p class="goods__item-text">Защитные стёкла и плёнки</p>
-            </li>
-            <li class="goods__item">
-              <img
-                src="./img/icons/goods/3.png"
-                alt="Фото товара"
-                class="goods__item-img"
-              />
-              <p class="goods__item-text">Зарядные устройства</p>
-            </li>
-            <li class="goods__item">
-              <img
-                src="./img/icons/goods/4.png"
-                alt="Фото товара"
-                class="goods__item-img"
-              />
-              <p class="goods__item-text">Проводные и беспроводные наушники</p>
-            </li>
-            <li class="goods__item">
-              <img
-                src="./img/icons/goods/5.png"
-                alt="Фото товара"
-                class="goods__item-img"
-              />
-              <p class="goods__item-text">Аксессуары для смарт-часов</p>
-            </li>
-            <li class="goods__item">
-              <img
-                src="./img/icons/goods/6.png"
-                alt="Фото товара"
-                class="goods__item-img"
-              />
-              <p class="goods__item-text">Музыкальные колонки</p>
-            </li>
-            <li class="goods__item">
-              <img
-                src="./img/icons/goods/7.png"
-                alt="Фото товара"
-                class="goods__item-img"
-              />
-              <p class="goods__item-text">Рюкзаки и кейсы</p>
-            </li>
-            <li class="goods__item">
-              <img
-                src="./img/icons/goods/8.png"
-                alt="Фото товара"
-                class="goods__item-img"
-              />
-              <p class="goods__item-text">
-                Лампы, веб-камеры и другие полезные аксессуары
-              </p>
-            </li>
-          </ul>
-          <div class="goods__note-box">
-            <p class="goods__note-text">
-              Благодаря прямым поставкам от заводов-изготовителей в Китае,
-              <span>можно делать наценку от 300% до 1 000%,</span> продавая
-              по рыночным ценам
-            </p>
+          <h2 class="goods__title">Наши <span>действующие магазины</span></h2>
+          <div class="goods__swiper-box">
+            <div class="swiper swiper_video">
+              <div class="swiper-wrapper">
+                <div
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=5oA1jo6qOL4"
+                  class="swiper-slide"
+                >
+                  <img src="./img/gallery/video-slider/1.jpg" />
+                  <div class="swiper-slide-bg"></div>
+                </div>
+                <div
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=n_OQxDGFXU0"
+                  class="swiper-slide"
+                >
+                  <img src="./img/gallery/video-slider/3.jpg" />
+                  <div class="swiper-slide-bg"></div>
+                </div>
+                <div
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=5VnVTeaOEIM"
+                  class="swiper-slide"
+                >
+                  <img src="./img/gallery/video-slider/4.jpg" />
+                  <div class="swiper-slide-bg"></div>
+                </div>
+                <div
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=U4YB0xHqhS0"
+                  class="swiper-slide"
+                >
+                  <img src="./img/gallery/video-slider/2.jpg" />
+                  <div class="swiper-slide-bg"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </section>
@@ -655,7 +616,7 @@
                   По формату «Флагманский магазин»
                 </p>
                 <p class="formats__format-place">до 10 кв. м.</p>
-                <p class="formats__format-number">20 000 руб.</p>
+                <p class="formats__format-number">25 000 руб.</p>
               </div>
               <div class="formats__cell">0 ₽</div>
               <div class="formats__cell">12 500 ₽</div>
@@ -972,6 +933,182 @@
               </li>
             </ul>
           </div>
+          <div class="swiper-box">
+            <div class="swiper swiper_slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/1.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/2.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/3.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/4.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/5.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/6.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/7.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/8.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/9.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/10.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/11.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/12.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/13.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/14.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/15.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/16.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/17.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/18.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/19.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/20.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/21.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/22.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/23.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/24.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/25.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/26.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/27.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+                <div class="swiper-slide" data-fancybox="bottom-slider">
+                  <img
+                    src="./img/gallery/slider/28.jpg"
+                    class="swiper-slide-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next-bottom"></div>
+            <div class="swiper-button-prev swiper-button-prev-bottom"></div>
+          </div>
         </div>
       </section>
 
@@ -1108,7 +1245,9 @@
       <div class="container">
         <div class="footer__content">
           <div class="footer__left-side">
-            <p class="footer__company-info">© «МАККЕЙС», 2016-2021 г.</p>
+            <p class="footer__company-info">
+              © «МАККЕЙС», 2016-<span class="js-year">2021</span> г.
+            </p>
             <p class="footer__company-info">ИП Девяткин Юрий Николаевич</p>
             <p class="footer__company-info">ИНН 745211439552</p>
             <address class="footer__address">Россия, г. Челябинск</address>
@@ -1116,13 +1255,6 @@
               Политика конфиденциальности
             </button>
           </div>
-          <img
-            src="./img/icons/logo-footer.png"
-            width="272"
-            height="49.35"
-            alt="Логотип компании"
-            class="footer__logo"
-          />
           <div class="footer__right-side">
             <div class="footer__contact-box">
               <a href="tel:+" class="footer__phone">+7 (909) 817-70-10</a
@@ -1131,8 +1263,16 @@
               </button>
             </div>
             <div class="footer__social-list">
-              <a href="" target="_blank" class="footer__social"></a
-              ><a href="" target="_blank" class="footer__social"></a>
+              <a
+                href="https://vk.com/mccase"
+                target="_blank"
+                class="footer__social"
+              ></a
+              ><a
+                href="https://www.instagram.com/mccase_official/"
+                target="_blank"
+                class="footer__social"
+              ></a>
             </div>
           </div>
         </div>
@@ -1219,8 +1359,8 @@
           <li class="priv-policy__item">
             2. Настоящая политика Оператора в отношении обработки персональных
             данных (далее – Политика) применяется ко всей информации, которую
-            Оператор может получить о посетителях веб-сайта компании «Название
-            Компании».
+            Оператор может получить о посетителях веб-сайта компании «Маккейс»
+            (ИП Девяткин Юрий Николаевич, ИНН745211439552).
           </li>
         </ol>
 
@@ -1346,7 +1486,7 @@
             новых продуктах и услугах, специальных предложениях и различных
             событиях. Пользователь всегда может отказаться от получения
             информационных сообщений, направив Оператору письмо на адрес
-            электронной почты с доменом email@mail.ru с пометкой «Отказ от
+            электронной почты с доменом imer77@yandex.ru с пометкой «Отказ от
             уведомлений о новых продуктах и услугах и специальных предложениях».
           </li>
           <li class="priv-policy__item">

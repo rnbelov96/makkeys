@@ -71,4 +71,18 @@ main {
       bottom: -5px;
     }
   }
+
+  &_desc {
+    &::after {
+      bottom: -2px;
+      height: 10px;
+    }
+  }
+}
+
+.fancybox-button--arrow_left, .fancybox-button--arrow_right {
+  @media (min-width: 1024px) {
+    width: 100px !important;
+    height: calc(100/70*100px) !important; 
+  }
 }

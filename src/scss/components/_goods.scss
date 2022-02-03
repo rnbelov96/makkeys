@@ -1,17 +1,21 @@
 .goods {
   @include bg;
   background-image: url('/src/img/bgs/goods-bg.jpg');
-  min-height: 1365px;
-  padding-top: 120px;
+  background-position-y: bottom;
   padding-bottom: 120px;
+  padding-top: 74px;
   color: white;
   position: relative;
   z-index: 2;
 
   @media (max-width: 650px) {
-    background-position: -1200px top;
-    padding-top: 80px;
+    padding-top: 45px;
+    padding-bottom: 96px;
   }
+}
+
+.goods__swiper-box {
+  position: relative;
 }
 
 .goods__title {
@@ -21,7 +25,7 @@
   @include max-width(730px);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 
   span {
     color: $green;
@@ -47,7 +51,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;
-  
+
   @media (max-width: 650px) {
     width: 165px;
     height: auto;

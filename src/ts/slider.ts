@@ -19,8 +19,8 @@ const initSlider = (options: {
         return 1;
       }
       if (
-        pageWidth > options.changeModeBreakpoints[0] &&
-        pageWidth <= options.changeModeBreakpoints[1]
+        pageWidth > options.changeModeBreakpoints[0]
+        && pageWidth <= options.changeModeBreakpoints[1]
       ) {
         return 2;
       }
@@ -81,13 +81,9 @@ const initSlider = (options: {
     }
 
     const sliderItemElListBefore = [...itemElList].slice(-4);
-    newSliderItemElListBefore = sliderItemElListBefore.map(el =>
-      el.cloneNode(true),
-    );
+    newSliderItemElListBefore = sliderItemElListBefore.map(el => el.cloneNode(true));
     const sliderItemElListAfter = [...itemElList].slice(0, 4);
-    newSliderItemElListAfter = sliderItemElListAfter.map(el =>
-      el.cloneNode(true),
-    );
+    newSliderItemElListAfter = sliderItemElListAfter.map(el => el.cloneNode(true));
     imagesBoxEl.prepend(...newSliderItemElListBefore);
     imagesBoxEl.append(...newSliderItemElListAfter);
   };
@@ -133,6 +129,22 @@ const initSlider = (options: {
   let sliderItemElList = document.querySelectorAll(
     `.${options.sliderSectionName}__img-item`,
   );
+  const hrefList = [...sliderItemElList].map(el => el.children[0].getAttribute('src'));
+
+  const openFancy = (e: Event) => {
+    const firstImageHref = e.currentTarget?.children[0].getAttribute('src');
+    const newHrefList = hrefList.filter(el => firstImageHref !== el);
+    newHrefList.unshift(firstImageHref);
+    $.fancybox.open(
+      newHrefList.map(href => ({
+        src: href,
+      })),
+    );
+  };
+
+  sliderItemElList.forEach(el => {
+    el.addEventListener('click', openFancy);
+  });
 
   cloneSliderItems(sliderImagesBoxEl, sliderItemElList);
 
@@ -183,7 +195,7 @@ const initSlider = (options: {
     navItemList = Array(options.imagesLength)
       .fill({}, 0, options.imagesLength)
       .map((_el, index) => {
-        const navItemEl = document.createElement('button');
+        const navItemEl = document.createElement('div');
         navItemEl.classList.add(`${options.sliderSectionName}__nav-item`);
         if (index === 0) {
           navItemEl.classList.add(
@@ -197,8 +209,7 @@ const initSlider = (options: {
           sliderImagesBoxEl.style.transition = 'transform .5s';
           const prevCurrentImage = currentImage;
           currentImage = Number(navEl.dataset.image);
-          const newTranslateXPos =
-            initTranslateXPos - translateStep * (currentImage - 1);
+          const newTranslateXPos = initTranslateXPos - translateStep * (currentImage - 1);
           translateXPos = newTranslateXPos;
           sliderImagesBoxEl.style.transform = `translate3d(${translateXPos}%, 0px, 0px)`;
           navItemList[currentImage - 1].classList.add(
@@ -259,8 +270,7 @@ const initSlider = (options: {
       translateStep = 100 / mode;
       initTranslateXPos = cssValueList.find(el => el.mode === mode)
         ?.pos as number;
-      const newTranslateXPos =
-        initTranslateXPos - translateStep * (currentImage - 1);
+      const newTranslateXPos = initTranslateXPos - translateStep * (currentImage - 1);
       translateXPos = newTranslateXPos;
       setStyles(mode);
     }
@@ -302,6 +312,12 @@ const initSlider = (options: {
     wrapperEl.removeEventListener('mousemove', dragAction);
     wrapperEl.removeEventListener('touchmove', swipeAction);
 
+    if (offset < -1 || offset > 1) {
+      sliderItemElList.forEach(el => {
+        el.removeEventListener('click', openFancy);
+      });
+    }
+
     if (offset < -translateStep / 8) {
       translateXPos += translateStep;
       currentImage -= 1;
@@ -341,8 +357,7 @@ const initSlider = (options: {
     setTimeout(() => {
       sliderImagesBoxEl.style.transition = '';
       if (currentImage === options.imagesLength && prevCurrentImage === 1) {
-        translateXPos =
-          initTranslateXPos - translateStep * (options.imagesLength - 1);
+        translateXPos = initTranslateXPos - translateStep * (options.imagesLength - 1);
         sliderImagesBoxEl.style.transform = `translate3d(${translateXPos}%, 0px, 0px)`;
       }
 
@@ -351,6 +366,9 @@ const initSlider = (options: {
         sliderImagesBoxEl.style.transform = `translate3d(${translateXPos}%, 0px, 0px)`;
       }
       activateBtns();
+      sliderItemElList.forEach(el => {
+        el.addEventListener('click', openFancy);
+      });
     }, 500);
   };
 
@@ -384,8 +402,7 @@ const initSlider = (options: {
     setTimeout(() => {
       sliderImagesBoxEl.style.transition = '';
       if (currentImage === options.imagesLength && prevCurrentImage === 1) {
-        translateXPos =
-          initTranslateXPos - translateStep * (options.imagesLength - 1);
+        translateXPos = initTranslateXPos - translateStep * (options.imagesLength - 1);
         sliderImagesBoxEl.style.transform = `translate3d(${translateXPos}%, 0px, 0px)`;
       }
       activateBtns();

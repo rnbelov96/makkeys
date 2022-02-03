@@ -40,6 +40,12 @@
   border-radius: 0;
   cursor: pointer;
 
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+
   &::after {
     position: absolute;
     z-index: 2;
@@ -53,7 +59,8 @@
     border-radius: 50%;
     color: rgb(136, 136, 136);
     content: '×';
-    font: 300 22px / 30px 'HelveticaNeueCyr', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
     text-align: center;
     transition: background-color 0.25s ease 0s;
   }
